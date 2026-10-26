@@ -6,7 +6,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Acceso y cuenta de cliente', () => {
   test('Navegar al inicio de sesión desde la página de inicio', async ({ page }) => {
 
-    test.step('Abrir la página de inicio de GeekStore y navegar al inicio de sesión', async () => {
+   await test.step('Abrir la página de inicio de GeekStore y navegar al inicio de sesión', async () => {
     // 1. Abrir la página de inicio de GeekStore.
     await page.goto('https://testing.geekqa.net');
      // 2. Verificar que la opción Login esté visible.
