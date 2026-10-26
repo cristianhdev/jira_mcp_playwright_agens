@@ -166,14 +166,14 @@ Como cliente, quiero consultar el catálogo
 para identificar productos disponibles.
 
 Criterios de aceptación:
-- CA01: Mostrar productos disponibles.
-- CA02: Mostrar nombre y precio.
-- CA03: Identificar productos agotados.
+- CA_[Número]: Mostrar productos disponibles.
+- CA_[Número]: Mostrar nombre y precio.
+- CA_[Número]: Identificar productos agotados.
 
 Casos de prueba:
-- CP01: Visualizar productos disponibles.
-- CP02: Identificar productos agotados.
-- CP03: Consultar un catálogo vacío.
+- CP_[Número]: Visualizar productos disponibles.
+- CP_[Número]: Identificar productos agotados.
+- CP_[Número]: Consultar un catálogo vacío.
 
 Las claves definitivas deben obtenerse de Jira.
 

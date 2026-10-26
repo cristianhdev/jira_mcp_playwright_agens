@@ -1,5 +1,5 @@
 
-# Requisitos del proyecto GeekStore
+# Requisitos del proyecto
 
 ## 1. Información general
 

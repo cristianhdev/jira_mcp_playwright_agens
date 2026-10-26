@@ -27,8 +27,8 @@ para [beneficio].
 **Story points:** [Estimación]
 
 **Criterios de aceptación:**
-- CA-01: [Criterio de aceptación]
-- CA-02: [Criterio de aceptación]
+- CA-[Numero_id]: [Criterio de aceptación]
+- CA-[Numero_id]: [Criterio de aceptación]
 
 ---
 
@@ -56,3 +56,6 @@ para [beneficio].
 
 **Tipo:** Funcional / Regresión
 **Automatizable:** Sí / No / Por evaluar
+
+## 4. Concideracion importante
+Al definir las épicas, las historias de usuario y los casos de prueba, se debe tener presente la relación y trazabilidad entre los tres elementos, Cada historia de usuario debe estar asociada a su épica correspondiente y sus casos de prueba deben validar los criterios de aceptación de dicha historia
