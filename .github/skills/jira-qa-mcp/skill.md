@@ -39,6 +39,11 @@ Aceptar como fuente de requisitos:
 - Documentos PDF (.pdf), cuando su contenido pueda extraerse.
 - Instrucciones explícitas del usuario.
 
+Usar [la especificación funcional y QA](../../../docs/especificaciones/especificaciones.md)
+como formato común para épicas, historias, criterios de aceptación y casos de prueba.
+Conservar los identificadores y las relaciones de la fuente; no completar datos faltantes
+con supuestos.
+
 Proyecto Jira objetivo:
 - Utilizar el proyecto indicado por el usuario.
 - No asumir que JIRA_MCP es el proyecto correcto
@@ -91,13 +96,14 @@ Para cada caso de prueba, definir:
 - Identificador provisional.
 - Nombre.
 - Historia relacionada.
+- Criterios de aceptación cubiertos.
 - Tipo de prueba.
 - Prioridad.
 - Precondiciones.
 - Datos de prueba.
-- Pasos.
-- Resultado esperado por paso.
+- Pasos con el resultado esperado de cada paso.
 - Resultado esperado final.
+- Si es automatizable, cuando la fuente o el análisis lo permitan.
 
 ### Fase 4: Crear y relacionar
 
@@ -136,44 +142,47 @@ Si una operación no está disponible:
 - Evitar casos de prueba redundantes.
 - Mantener trazabilidad entre criterios y pruebas.
 - Redactar resultados esperados objetivos y observables.
+- No inventar prioridades, estimaciones, reglas de negocio ni datos ausentes.
 - No confundir un caso de prueba con una ejecución.
 - No declarar una prueba aprobada si no fue ejecutada.
 
 ## 6. Convenciones de nombres
 
 Épicas:
-EP - [Nombre funcional]
+EPIC-01 — [Nombre funcional]
 
 Historias:
-HU - [Acción o funcionalidad]
+HU-01 — [Acción o funcionalidad]
+
+Criterios de aceptación:
+CA-01 — [Condición verificable]
 
 Casos de prueba:
-CP - [Escenario verificable]
+TC-01 — [Escenario verificable]
 
 Bugs:
-BUG - [Comportamiento incorrecto]
+BUG-01 — [Comportamiento incorrecto]
 
-Estos prefijos son convenciones para los resúmenes,
-no claves oficiales de Jira.
+Estos identificadores son convenciones de trazabilidad y no claves oficiales de Jira.
+Las claves definitivas deben obtenerse de Jira.
 
 ## 7. Ejemplo de requisitos
 
-Épica:
-Gestión del catálogo de productos.
+### EPIC-01 — Gestión del catálogo de productos
 
-Historia:
+#### HU-01 — Consultar el catálogo
 Como cliente, quiero consultar el catálogo
 para identificar productos disponibles.
 
 Criterios de aceptación:
-- CA_[Número]: Mostrar productos disponibles.
-- CA_[Número]: Mostrar nombre y precio.
-- CA_[Número]: Identificar productos agotados.
+- CA-01: Mostrar productos disponibles.
+- CA-02: Mostrar nombre y precio.
+- CA-03: Identificar productos agotados.
 
 Casos de prueba:
-- CP_[Número]: Visualizar productos disponibles.
-- CP_[Número]: Identificar productos agotados.
-- CP_[Número]: Consultar un catálogo vacío.
+- TC-01: Visualizar productos disponibles (cubre CA-01 y CA-02).
+- TC-02: Identificar productos agotados (cubre CA-03).
+- TC-03: Consultar un catálogo vacío (si este comportamiento está definido).
 
 Las claves definitivas deben obtenerse de Jira.
 
