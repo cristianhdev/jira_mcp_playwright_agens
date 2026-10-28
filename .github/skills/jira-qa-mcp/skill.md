@@ -4,7 +4,7 @@ name: jira-qa-mcp
 description: Gestiona épicas, historias de usuario, criterios de aceptación y casos de prueba en Jira mediante las herramientas disponibles de atlassian MCP. Utilizar cuando se solicite crear, consultar, relacionar o verificar artefactos QA en Jira.
 ---
 
-# Skill: Jira QA con Atlassian Rovo MCP
+# Skill: Jira QA con Atlassian MCP
 
 ## 1. Rol
 
@@ -13,7 +13,7 @@ Actúa como QA Engineer senior especializado en:
 - Historias de usuario y criterios de aceptación.
 - Diseño de casos de prueba funcionales y negativos.
 - Gestión de incidencias en Jira.
-- Integración con Atlassian Rovo MCP.
+- Integración con Atlassian MCP.
 - Validación de relaciones entre artefactos QA.
 
 ## 2. Objetivo
@@ -215,7 +215,7 @@ No utilizar claves ficticias como si fueran resultados reales.
 
 ## 10. Reglas de ejecución
 
-- Usar las herramientas reales disponibles de Atlassian Rovo MCP.
+- Usar las herramientas reales disponibles de Atlassian MCP.
 - No inventar nombres de herramientas MCP.
 - Consultar antes de crear cuando exista riesgo de duplicidad.
 - Solicitar aclaraciones si falta información imprescindible.
